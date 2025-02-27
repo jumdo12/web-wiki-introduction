@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나만의 갤러리 위키 페이지</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/index.js"></script>
+</head>
+<body>
+<div id="app">
+    <header>
+        <h1 class="logo">
+            <img src="./images/header-logo.png" alt="행성이 로고" width="166" height="147" />
+            <span class="text">크루 위키</span>
+        </h1>
+    </header>
+    <main>
+        <h2 class="title">가이온</h2>
+        <hr />
+        <section>
+            <h3 class="subtitle">좋아하는 음악</h3>
+            <article>
+                <h4>푸른 산호초</h4>
+                <div class="thumbnail">
+                    <div class="song-imager">
+                        <img src="./images/song1.png" alt="이미지 1" />
+                    </div>
+                </div>
+                <p>
+                    이 곡은 마츠다 세이코가 1980년 7월 1일에 발표한 두 번째 싱글로 발매 직후 오리콘 주간 차트에서 최고 2위를 기록하며
+                    1980년 제22회 일본 레코드 대상에서 신인상을 수상하며 세이코를 단숨에 톱 아이돌의 자리에 올려놓은 동시에 이제 막 아이돌
+                    문화가 꽃피우기 시작한 일본 음악계의 흐름을 선도한 곡 중 하나로 자리매김했다. 이 곡은 마츠다 세이코의
+                    첫 번째 오리지널 음반 SQUALL에도 수록되어 8월 1일 발매되었다.
+
+                    곡의 분위기는 부드럽고 청량한 멜로디와 서정적인 가사가 돋보이며,
+                    여름 해변의 풋풋한 첫사랑을 연상시키는 가사와 세이코 특유의 맑고 깨끗한 음색이 어우러져 많은 이들의 마음을 사로잡았다.
+                    특히 "あなたが好き" ("당신을 좋아해")라는 가사는 당시 젊은이들 사이에서 큰 화제가 되었고, 이 곡의 상징적인 부분으로 자리 잡았다.
+                </p>
+            </article>
+            <article>
+                <h4>Square (2017)</h4>
+                <div class="thumbnail">
+                    <div class="song-imager">
+                        <img src="./images/song2.png" alt="이미지 2" />
+                    </div>
+                </div>
+                <p align="center">
+                    All the colors and personalities<br/>
+                    모든 색깔과 성격들<br/>
+                    you can’t see right through what I truly am<br/>
+                    그것들 사이로는 내가 정말 어떤 사람인지 볼 수 없어<br/>
+                    you’re hurting me without noticing<br/>
+                    넌 예고도 없이 나에게 상처를 주고<br/>
+                    I’m so, so broke like someone just robbed me<br/>
+                    누가 날 털어간 것 마냥 부서진 것 같아<br/>
+                </p>
+            </article>
+        </section>
+        <section id = "comment">
+            <div class="comment-writing-container">
+                <form>
+                    <fieldset>
+                        <legend>댓글 쓰기</legend>
+                        <input type="text" id="commentInput" placeholder="댓글을 작성하세요...">
+                        <button type="button" onclick="addComment()">댓글 추가</button>
+                        <button type="button" onclick="resetComment()">취소</button>
+                    </fieldset>
+                </form>
+            </div>
+            <ul class="commentList" id="commentList">
+            </ul>
+        </section>
+        <footer>
+            <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
+            <p>&copy; 우아한테크코스 All Rights reserved.</p>
+        </footer>
+    </main>
+    <aside class="right-sidebar">
+        <div class="profile-image">가이온 프로필 이미지</div>
+        <nav>
+            <h2>Contents</h2>
+            <ol class="contents">
+                <li>
+                    <a href="index.html">자기소개</a>
+                </li>
+                <li>
+                    <a href="my-travel.html">기억에 남는 여행지</a>
+                </li>
+                <li>
+                    <a href="my-song.html">내가 좋아하는 음악</a>
+                </li>
+                <li>
+                    <a href="#comment">감상평</a>
+                </li>
+            </ol>
+        </nav>
+    </aside>
+</div>
+</body>
+</html>

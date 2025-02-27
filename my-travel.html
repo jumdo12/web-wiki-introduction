@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나만의 갤러리 위키 페이지</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1 class="logo">
+        <img src="./images/header-logo.png" alt="행성이 로고" width="166" height="147" />
+        <span class="text">크루 위키</span>
+      </h1>
+    </header>
+    <main>
+      <h2 class="title">가이온</h2>
+      <hr />
+      <section>
+              <h3 class="subtitle">기역에 남는 여행지</h3>
+              <article>
+                <h4>시즈오카</h4>
+                <div class="thumbnail">
+                  <div class="grid-container">
+                    <img src="./images/tour1.png" alt="이미지 1" />
+                    <img src="./images/tour2.png" alt="이미지 2" />
+                    <img src="./images/tour3.png" alt="이미지 3" />
+                    <img src="./images/tour4.png" alt="이미지 4" />
+                    <img src="./images/tour5.png" alt="이미지 5" />
+                    <img src="./images/tour6.png" alt="이미지 6" />
+                    <img src="./images/tour7.png" alt="이미지 7" />
+                    <img src="./images/tour8.png" alt="이미지 8" />
+                    <img src="./images/tour9.png" alt="이미지 9" />
+                  </div>
+                </div>
+              </article>
+              <article>
+                <h4>요코하마</h4>
+                <div class="thumbnail">
+                  <div class="grid-container-3">
+                    <img src="./images/yoko1.png" alt="이미지 1" />
+                    <img src="./images/yoko2.png" alt="이미지 2" />
+                    <img src="./images/yoko3.png" alt="이미지 3" />
+                  </div>
+                </div>
+              </article>
+            </section>
+      <section id = "comment">
+        <div class="comment-writing-container">
+          <form>
+            <fieldset>
+              <legend>댓글 쓰기</legend>
+              <input type="text" id="commentInput" placeholder="댓글을 작성하세요...">
+              <button type="button" onclick="addComment()">댓글 추가</button>
+              <button type="button" onclick="resetComment()">취소</button>
+            </fieldset>
+          </form>
+        </div>
+        <ul class="commentList" id="commentList">
+        </ul>
+      </section>
+      <footer>
+        <img src="./images/footer-logo.png" width="180" alt="우아한테크코스 로고" />
+        <p>&copy; 우아한테크코스 All Rights reserved.</p>
+      </footer>
+    </main>
+    <aside class="right-sidebar">
+      <div class="profile-image">가이온 프로필 이미지</div>
+      <nav>
+        <h2>Contents</h2>
+        <ol class="contents">
+          <li>
+            <a href="index.html">자기소개</a>
+          </li>
+          <li>
+            <a href="my-travel.html">기억에 남는 여행지</a>
+          </li>
+          <li>
+            <a href="my-song.html">내가 좋아하는 음악</a>
+          </li>
+          <li>
+            <a href="#comment">감상평</a>
+          </li>
+        </ol>
+      </nav>
+    </aside>
+  </div>
+</body>
+</html>

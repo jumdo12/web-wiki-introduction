@@ -59,6 +59,8 @@ h4 {
 
 section > p,
 article > p {
+  scroll-margin-top: 50px;
+  margin-bottom: 80px;
   line-height: 24px;
   text-indent: 8px;
 }
@@ -67,6 +69,37 @@ section,
 article {
   display: flex;
   flex-flow: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+  grid-template-rows: repeat(3, 1fr); /* 3개의 행 */
+  gap: 10px; /* 이미지 간격 */
+  max-width: 1000px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+  gap: 10px; /* 이미지 간격 */
+  max-width: 1000px; /* 최대 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+.grid-container img {
+  width: 100%; /* 부모(grid)의 크기에 맞춤 */
+  aspect-ratio: 1 / 1; /* 정사각형 유지 */
+  object-fit: cover; /* 이미지가 찌그러지지 않도록 */
+  border-radius: 8px; /* 모서리 둥글게 (선택 사항) */
+}
+
+.grid-container-3 img {
+  width: 100%; /* 부모(grid)의 크기에 맞춤 */
+  aspect-ratio: 1 / 1; /* 정사각형 유지 */
+  object-fit: cover; /* 이미지가 찌그러지지 않도록 */
+  border-radius: 8px; /* 모서리 둥글게 (선택 사항) */
 }
 
 div.thumbnail {
@@ -97,8 +130,17 @@ aside h2 {
   font-size: 1.7rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.song-imager img {
+    width: 500px; /* 원하는 크기로 조절 */
+    height: auto; /* 비율 유지 */
+}
+
 .profile-image {
-  background-image: url("https://images.unsplash.com/photo-1618979251882-0b40ef3617f0?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("../images/face.png");
   background-size: 100%;
   background-position: center 100%;
   width: var(--aside-width);
@@ -131,6 +173,26 @@ footer {
   padding-top: var(--page-padding-top);
   align-items: center;
   margin: 24px;
+}
+
+button {
+    height: 65px;
+    width : 120px;
+    padding: 0 15px;
+    font-size: 19px;
+}
+
+#comment-container{
+    display: flex;
+    align-items: center;  /* 세로 정렬 */
+    gap: 10px;  /* 요소 사이 간격 */
+}
+
+#commentInput {
+    width: 450px; /* 가로 크기 */
+    height: 40px; /* 세로 크기 */
+    font-size: 16px; /* 글자 크기 */
+    padding: 10px; /* 내부 여백 */
 }
 
 footer p {
